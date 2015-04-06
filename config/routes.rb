@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'buttons/new'
 
   devise_for :users
   get 'welcome/index'
