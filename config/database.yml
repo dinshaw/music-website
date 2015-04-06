@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: feedback_development
+  username: <%= `whoami` %>
+
+test:
+  adapter: postgresql
+  database: feedback_test
+  username: <%= `whoami` %>

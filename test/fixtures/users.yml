@@ -1,0 +1,3 @@
+jayne:
+  email: jayne@example.org
+  encrypted_password: <%= default_password_digest %>
