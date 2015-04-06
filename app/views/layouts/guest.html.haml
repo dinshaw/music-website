@@ -10,14 +10,5 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body.guest
-    %header
-      .row
-        .large-12.columns.text-right
-          = form_for("user", url: user_session_path) do |f|
-            = f.email_field :email, placeholder: 'email'
-            = f.password_field :password, placeholder: 'password'
-            %button.small{type: :submit} Sign in
-            %a.button.small{href: new_user_registration_path} Sign up
-
     %main{:role => "main"}
       = yield
