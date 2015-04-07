@@ -1,9 +1,9 @@
 development:
   adapter: postgresql
-  database: feedback_development
+  database: music-website_development
   username: <%= `whoami` %>
 
 test:
   adapter: postgresql
-  database: feedback_test
+  database: music-website_test
   username: <%= `whoami` %>
