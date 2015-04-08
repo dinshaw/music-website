@@ -11,19 +11,18 @@
     %ul.right
       %li.divider
 .row
-  .large-12.columns
+  .large-12.columns.intro
     .row
-      %h1 Hi!
+      %h3 Hi!
       %p I'm just getting this site set up. I'll be playing a bunch this summer. Mostly at <a href=''>The Café at Pier 45</a> on the Hudson River Park (river side of the west side highway) at the end of Christopher st.
 
       %p Please, sign up and I'll keep you posted. - Dinshaw
+    .row
+      .large-12.columns
+        = render 'signup_form'
 
 .row
   .large-12.columns
-    .row
-      .large-12
-        = render 'signup_form'
-
     %br
     .row
       .large-12.columns
@@ -40,7 +39,7 @@
                 %h6.subheader As soon as it gets warm...
 
           .large-4.small-6.columns
-            %img{:src => "http://placehold.it/300x465&text=Image"}/
+            %img{ src: image_url('tallfriend.jpg')}
           .large-4.small-12.columns
             %h4 Blog
             %hr

@@ -1,3 +1,20 @@
+body main {
+  background-image: asset_url('park.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+
+}
 .alert-box {
   margin-top: 1rem;
 }
+.intro {
+  margin-top: 1rem;
+  background-color: rgba(192,192,192,0.9);
+
+  p, h3 {
+    padding: 0 1rem;
+  }
+}
+
+
+img { border: none !important; }
