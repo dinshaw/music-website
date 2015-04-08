@@ -1,20 +1,34 @@
-body main {
-  background-image: asset_url('park.jpg');
-  background-repeat: no-repeat;
-  background-position: right top;
+html body {
+  background-color: black;
+  background-image: asset_url('hat.jpg');
+  background-size: cover;
 
+  main {
+    background-color: transparent;
+  }
 }
 .alert-box {
   margin-top: 1rem;
 }
-.intro {
+.welcome {
+  background-color: rgba(255,255,255,0.9);
+  border: 1px solid gray;
   margin-top: 1rem;
-  background-color: rgba(192,192,192,0.9);
-
   p, h3 {
     padding: 0 1rem;
   }
 }
 
 
-img { border: none !important; }
+.email_signup {
+  input.email {
+    width: 20rem;
+    float: left;
+    margin-right: 1rem;
+  }
+}
+
+.gigs {
+  background-color: rgba(255,255,255,0.5);
+  border: 1px solid gray;
+}
