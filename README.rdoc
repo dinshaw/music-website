@@ -1,3 +1,2 @@
 == README
-Feedback interface.
-With updates.
+Music Website for DIN.

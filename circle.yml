@@ -2,7 +2,5 @@ deployment:
   production:
     branch: master
     commands:
-      - heroku maintenance:on --app pcgi-feedback
-      - git push git@heroku.com:pcgi-feedback.git $CIRCLE_SHA1:refs/heads/master
-      - heroku run rake db:migrate --app pcgi-feedback
-      - heroku maintenance:off --app pcgi-feedback
+      - git push git@heroku.com:music-website.git $CIRCLE_SHA1:refs/heads/master
+
