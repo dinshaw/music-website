@@ -11,15 +11,12 @@
     %ul.right
       %li.divider
 .row
-  .large-12.columns.welcome
+  .welcome.small-12.columns
+    %h3 Hi!
+    %p I'm just getting this site set up. I'll be playing a bunch this summer. Mostly at <a href='http://www.hudsonriverpark.org/explore-the-park/activities/cafe-pier-45' target='_blank'>The Café at Pier 45</a> on the Hudson River Park (river side of the west side highway) at the end of Christopher st.
+    %p Please, sign up and I'll keep you posted. - Dinshaw
     .row
-      %h3 Hi!
-      %p I'm just getting this site set up. I'll be playing a bunch this summer. Mostly at <a href='http://www.hudsonriverpark.org/explore-the-park/activities/cafe-pier-45' target='_blank'>The Café at Pier 45</a> on the Hudson River Park (river side of the west side highway) at the end of Christopher st.
-
-      %p Please, sign up and I'll keep you posted. - Dinshaw
-    .row
-      .large-12.columns
-        = render 'signup_form'
+      = render 'signup_form'
 
 .row
   .large-12.columns
@@ -36,8 +33,3 @@
                   %a{ href: 'http://www.hudsonriverpark.org/explore-the-park/activities/cafe-pier-45', target: '_blank'} The Cafe at Pier 45
                 %h6.subheader Every Wednesday, Thursday, Saturday &amp; Sunday!
                 %p.subheader From 5:30 - 9:00 pm
-
-          .large-4.small-6.columns
-            %img{ src: image_url('tallfriend.jpg')}
-
-

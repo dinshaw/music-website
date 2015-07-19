@@ -1,10 +1,12 @@
-.email_signup
+.small-12.columns
   %form{action: "//dinshaw.us4.list-manage.com/subscribe/post?u=eeec926912465aeab7eae66f8&id=49d47943c1", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
-    #mc_embed_signup_scroll
-      %input.email{name: "EMAIL", placeholder: "email address", required: "", type: "email", value: ""}
-      / real people should not fill this in and expect good things - do not remove this or risk form bot signups
-      %div{style: "position: absolute; left: -5000px;"}
-        %input{name: "b_eeec926912465aeab7eae66f8_49d47943c1", tabindex: "-1", type: "text", value: ""}
-      .clear
-        %input.button{name: "subscribe", type: "submit", value: "Subscribe"}
+    / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+    %div{style: "position: absolute; left: -5000px;"}
+      %input{name: "b_eeec926912465aeab7eae66f8_49d47943c1", tabindex: "-1", type: "text", value: ""}
+
+    #mc_embed_signup_scroll.row.collapse
+      .small-4.columns
+        %input.email.prefix.radius{name: "EMAIL", placeholder: "email address", required: "", type: "email", value: ""}
+      .small-2.columns.end
+        %input.button.postfix.radius{name: "subscribe", type: "submit", value: "Subscribe"}
 
