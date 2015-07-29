@@ -4,32 +4,25 @@
       %h1
         %a{:href => "#"}
           DIN
-    %li.toggle-topbar.menu-icon
-      %a{:href => "#"}
-        %span menu
-  %section.top-bar-section
-    %ul.right
-      %li.divider
-.row
-  .welcome.small-12.columns
-    %h3 Hi!
-    %p I'm just getting this site set up. I'll be playing a bunch this summer. Mostly at <a href='http://www.hudsonriverpark.org/explore-the-park/activities/cafe-pier-45' target='_blank'>The Café at Pier 45</a> on the Hudson River Park (river side of the west side highway) at the end of Christopher st.
-    %p Please, sign up and I'll keep you posted. - Dinshaw
-    .row
-      = render 'signup_form'
+
+
+.welcome.overlay
+  %h3 Hi!
+  %p I'll be playing all summer long at <a href='http://www.hudsonriverpark.org/explore-the-park/activities/cafe-pier-45' target='_blank'>The Café at Pier 45</a> on the Hudson River Park (river side of the west side highway) at the end of Christopher st.
+  %p Please, sign up and I'll keep you posted. - Din
+  .row
+    = render 'signup_form'
 
 .row
-  .large-12.columns
-    %br
-    .row
-      .large-12.columns
-        .row
-          .large-4.small-6.columns.gigs
-            %h4 Upcoming Shows
-            %hr
-            .row
-              .large-9.columns
-                %h5
-                  %a{ href: 'http://www.hudsonriverpark.org/explore-the-park/activities/cafe-pier-45', target: '_blank'} The Cafe at Pier 45
-                %h6.subheader Every Wednesday, Thursday, Saturday &amp; Sunday!
-                %p.subheader From 5:30 - 9:00 pm
+  .gigs.overlay
+    %h4 Upcoming Shows
+    %hr
+    %h5
+      %a{ href: 'http://www.hudsonriverpark.org/explore-the-park/activities/cafe-pier-45', target: '_blank'} The Cafe at Pier 45
+    %p Every Wednesday, Thursday, Saturday &amp; Sunday 5:30 - 9:00 pm!
+  .contact.overlay
+    %h4 Contact
+    %hr
+    %p
+      = mail_to "info@thedinman.com", "info@thedinman.com", encode: "javascript"
+      \| 646 239 8326

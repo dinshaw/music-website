@@ -20,6 +20,8 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.1)
+    actionview-encoded_mail_to (1.0.6)
+      rails
     activejob (4.2.1)
       activesupport (= 4.2.1)
       globalid (>= 0.3.0)
@@ -68,7 +70,9 @@ GEM
     erubis (2.7.0)
     execjs (2.4.0)
     ffi (1.9.8)
-    foundation-rails (5.5.1.1)
+    font-awesome-rails (4.3.0.0)
+      railties (>= 3.2, < 5.0)
+    foundation-rails (5.5.2.1)
       railties (>= 3.1.0)
       sass (>= 3.3.0, < 3.5)
     globalid (0.3.3)
@@ -211,11 +215,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionview-encoded_mail_to (~> 1.0.6)
   capybara (~> 2.4.4)
   coffee-rails (~> 4.1.0)
   database_cleaner (~> 1.4.1)
   devise (~> 3.4.1)
-  foundation-rails (~> 5.5.1.1)
+  font-awesome-rails (~> 4.3.0)
+  foundation-rails (~> 5.5.2)
   haml-rails (~> 0.9)
   jquery-rails (~> 4.0.3)
   minitest (~> 5.5.1)
