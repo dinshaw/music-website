@@ -5,5 +5,4 @@
       %p Right-click to download...
       %ul.tracks
         - @tracks.each do |track|
-          - name = track.key.gsub(/pre-production-tracks\//,'').gsub('-', ' ').split('.').first.titleize
-          %li= link_to name, track.public_url
+          %li= link_to track[:name], track[:url]

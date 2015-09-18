@@ -1,5 +1,6 @@
 class DemosController < ApplicationController
   def index
-    @demos = AwsWrapper.new.demos
+    @demo_tracks = AwsWrapper.new.demos
+    @covers = DropboxWrapper.new.covers
   end
 end
