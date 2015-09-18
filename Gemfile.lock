@@ -73,6 +73,8 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    dropbox-sdk (1.6.5)
+      json
     erubis (2.7.0)
     execjs (2.4.0)
     ffi (1.9.8)
@@ -231,6 +233,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   database_cleaner (~> 1.4.1)
   devise (~> 3.4.1)
+  dropbox-sdk
   figaro
   font-awesome-rails (~> 4.3.0)
   foundation-rails (~> 5.5.2)

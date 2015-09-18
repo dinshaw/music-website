@@ -17,6 +17,7 @@ gem 'devise', '~> 3.4.1'
 gem 'actionview-encoded_mail_to', '~> 1.0.6'
 gem 'aws-sdk', '~> 2'
 gem 'figaro'
+gem 'dropbox-sdk'
 
 group :test do
   gem 'minitest', '~> 5.5.1'
