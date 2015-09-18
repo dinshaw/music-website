@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'demos/index'
+
   devise_for :users
   get 'welcome/index'
 
@@ -8,6 +10,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+
+  get '/tracks' => 'tracks#index', as: :tracks
+  get '/demo' => 'demos#index', as: :demo
+
   resources :tracks
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

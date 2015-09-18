@@ -1,0 +1,109 @@
+.tracks.row
+  .column
+    %h2 Demo
+    .overlay
+      %p Right-click to download...
+      %ul.tracks
+        - @demos.each do |demo|
+          - name = demo.key.gsub(/demos\//,'').gsub('-', ' ').split('.').first.titleize
+          %li= link_to name, demo.public_url
+
+      .row
+        .column
+          %h3 Cover Set-list
+          %ul
+            %li 50 Ways to Leave Your Lover - Simon
+            %li Aint waistin time no more - Allmans
+            %li Alison - Elvis Costello
+            %li All night long - Lionel
+            %li All of Me - John Legend
+            %li All you need is love - Beatles
+            %li Always a woman - Billy Joel
+            %li Always on my mind - Willie
+            %li America - Simon
+            %li American Tune - Simon
+            %li Better Together - Jack Johnson
+            %li Blinded by the Light - Bruce
+            %li Blue eyes crying in the rain - Willie
+            %li Born To Run - Bruce
+            %li Budapest - George Ezra
+            %li Cant get enough of your love - Barry White
+            %li Careless Whisper - George Michael
+            %li City Of New Orleans
+            %li Come Monday - Buffet
+            %li Country roads - John Denver
+            %li Crazy Love - Van Morison
+            %li Daughters - John Mayer
+            %li Deep Elem Blues - Greatful Dead
+            %li Desperado - Eagles
+            %li Dixie Chicken - Little Feat
+            %li Don’t You Forget About Me - Simple Minds
+            %li Easy - Lionel
+            %li Every breath you take - Police
+            %li Father and Son - Cat Stevens
+            %li Feelin Good - Nina Simone
+            %li Fire and Rain - James Taylor
+            %li Firework - Katie Perry
+            %li First day of my life - Bright Eyes
+            %li Giant step - Taj Mahal
+            %li Hallelujah - Leonard Cohen
+            %li Happy - Pharrell
+            %li Harvest Moon - Niel Young
+            %li Haven’t met you yet
+            %li Here comes the sun - Beatles
+            %li Hey there Delilah - Plain White Tees
+            %li Human - Killers
+            %li Human Nature - MJ
+            %li I shot the sherif - Marley
+            %li I will survive - Gloria Gainer
+            %li Im Yours – Jason Mraz
+            %li Just the two of us - Bill Withers
+            %li Just the way you are – Bruno Mars
+            %li Kodachrome - Simon
+            %li La Isla Bonita - Madona
+            %li Late in the Evening - Simon
+            %li Life by the Drop - Stevie Ray Vaughn
+            %li Little Lion Man - Mumford
+            %li Mama you been on my mind - Dylan
+            %li Me and Julio - Simon
+            %li Melissa - Allmans
+            %li Moon over Bourbon Street - Sting
+            %li Mrs Robinson - Simon
+            %li Night Shift - Commodores
+            %li On the Road Again - Wilie
+            %li Pancho And Lefty - Willie
+            %li Patience - GNR
+            %li Peace Train – Cat Stevens
+            %li Probably Me - Sting
+            %li Raindrops keep falling on my head - Burt Bacharach
+            %li Redemption songs - Bob
+            %li Rich Girl - Hall and Oats
+            %li Rock Steady - Sting
+            %li Rolling in the deep - Adelle
+            %li Romeo and Juliet - Dire Striats
+            %li Seven Spanish Angels - Willie
+            %li Slip Slidin - Simon
+            %li Solsbury Hill - Peter Gabriel
+            %li Spansih moon - Little feat
+            %li Spirit in the Night - Bruce
+            %li Such Great Heights - Postal Service
+            %li Sunny - Bobby Hebb
+            %li Sunshine Go Away Today - Jonathan Edwards
+            %li Suspicious Minds - Elivs
+            %li Take Me To Church - Hozier
+            %li The Boxer - Simon
+            %li The Scientist - Cold Play
+            %li The Way - Fastball
+            %li The Weight - The Band
+            %li Thunder Road - Bruce
+            %li To all the girls I Loved Before - Willie
+            %li Valerie - Amy Winehouse
+            %li Waiting for my real life to begin - Colin Hay
+            %li Wake Me Up - Aloe Blacc
+            %li What its like - Everlast
+            %li Wild Horses - Stones
+            %li Wild World - Cat Stevens
+            %li Willin - Little Feat
+            %li Wish You Were Here - Floyd
+            %li Your just too good to be true - Frankie Vally
+            %li Youve Got a Friend - James Taylor
