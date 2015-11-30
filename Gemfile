@@ -20,18 +20,28 @@ gem 'figaro', '1.1.0'
 gem 'dropbox-sdk', '1.6.5'
 
 group :test do
-  gem 'minitest', '~> 5.5.1'
-  gem 'database_cleaner', '~> 1.4.1'
-  gem 'minitest-metadata', '~> 0.6.0', require: false
-  gem 'minitest-focus', '~> 1.1.0'
-  gem 'minitest-reporters', '~> 1.0.5'
-  gem 'minitest-spec-rails', '~> 5.2.0'
-  gem 'minitest-capybara', '~> 0.7.1'
+  gem 'shoulda-matchers', '~> 2.8.0'
   gem 'capybara', '~> 2.4.4'
+  gem 'capybara-webkit', '~> 1.5.1'
   gem 'selenium-webdriver', '~> 2.45.0'
-  gem 'poltergeist', '~> 1.5.1'
+  gem 'webmock', '~> 1.18.0'
+  gem 'database_cleaner', '~> 1.4.1'
+  gem 'timecop'
+end
+
+group :development do
+  gem 'guard-rspec', require: false
+  gem 'quiet_assets'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 group :development, :test do
+  gem 'capybara-screenshot', '~> 1.0.9'
+  gem 'rspec-rails', '~> 3.2.1'
   gem 'pry'
+  gem 'rspec_junit_formatter', :git => 'git@github.com:circleci/rspec_junit_formatter.git'
 end
+

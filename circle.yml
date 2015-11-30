@@ -3,4 +3,6 @@ deployment:
     branch: master
     commands:
       - git push git@heroku.com:music-website.git $CIRCLE_SHA1:refs/heads/master
-
+general:
+  artifacts:
+    - 'tmp/capybara'
