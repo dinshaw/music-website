@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.2.3'
 gem 'rails', '4.2.1'
 
-gem 'pg', '~> 0.18.1'
+gem 'pg', '~> 0.18'
 
 gem 'foundation-rails', '~> 5.5.2'
 gem 'foundation-icons-sass-rails', '3.0.0'
