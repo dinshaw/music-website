@@ -1,3 +1,4 @@
+# figaro heroku:set -e production
 dropbox_oauth_access_token: 'foo'
 aws_access_key_id: 'foo'
 aws_secret_access_key: 'foo'
