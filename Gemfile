@@ -18,6 +18,7 @@ gem 'actionview-encoded_mail_to', '~> 1.0.6'
 gem 'aws-sdk', '~> 2'
 gem 'figaro', '1.1.0'
 gem 'dropbox-sdk', '1.6.5'
+gem 'simple_form', '~> 3.2.0'
 
 group :test do
   gem 'shoulda-matchers', '~> 2.8.0'
@@ -27,6 +28,7 @@ group :test do
   gem 'webmock', '~> 1.18.0'
   gem 'database_cleaner', '~> 1.4.1'
   gem 'timecop'
+  gem 'faker', '~> 1.6.1'
 end
 
 group :development do
