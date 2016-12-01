@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.3.3'
 gem 'rails', '4.2.1'
 
-gem 'pg', '~> 0.18'
+gem 'pg', '~> 0.19'
 
 gem 'foundation-rails', '~> 5.5.2'
 gem 'foundation-icons-sass-rails', '3.0.0'
@@ -42,6 +42,7 @@ group :development, :test do
   gem 'capybara-screenshot', '~> 1.0.9'
   gem 'rspec-rails', '~> 3.2.1'
   gem 'pry'
-  gem 'rspec_junit_formatter', :git => 'git@github.com:circleci/rspec_junit_formatter.git'
+  gem 'rspec_junit_formatter', '0.2.2'
+
 end
 
